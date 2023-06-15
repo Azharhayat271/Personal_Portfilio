@@ -1,0 +1,51 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  #typing-effect {
+    animation: typing 2s steps(30, end);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+  }
+  .diamond, .dia {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+  }
+  .diamond {
+    transform: rotate(45deg) translateY(-25px) translateX(-25px);
+  }
+  .diamond .dia {
+    width: 380px;
+    height: 380px;
+    transform: rotate(-45deg);
+  }
+  .diamond img {
+    width: 100%;
+    height: auto;
+  }
+  .new{
+
+    clip-path: circle(20% at 50% 50%); /* Increase the percentage value to make the circle larger */
+    /* Add vendor prefixes for cross-browser support */
+    -webkit-clip-path: circle(20% at 50% 50%);
+    -moz-clip-path: circle(20% at 50% 50%);
+    -ms-clip-path: circle(20% at 50% 50%);
+    -o-clip-path: circle(20% at 50% 50%);
+   
+  }
+
+  .container1{
+    position: relative;
+  top: -300px; /* Adjust the value as needed */
+  margin-bottom: -300px; /* Adjust the value as needed */
+  background-position: center center;
+    
+
+  }
+  
